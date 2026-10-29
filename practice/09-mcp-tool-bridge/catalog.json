@@ -1,0 +1,26 @@
+{
+  "docs": [
+    {
+      "id": "build-guide",
+      "title": "CI 构建环境要求",
+      "body": "项目的 CI 构建使用 Node.js 22。依赖安装使用 pnpm install --frozen-lockfile；类型检查使用 pnpm typecheck。环境版本不符时先修正版本，再判断源码是否有误。"
+    },
+    {
+      "id": "cache-guide",
+      "title": "依赖缓存排查",
+      "body": "安装结果不一致时核对 lockfile 与缓存键。不要仅因构建失败就删除锁文件。"
+    }
+  ],
+  "issues": [
+    {
+      "id": "ISSUE-17",
+      "title": "CI 构建失败：Node 版本不符",
+      "body": "执行 pnpm typecheck 前环境校验失败。日志显示 Node.js 20，项目要求 Node.js 22。状态：open。"
+    },
+    {
+      "id": "ISSUE-23",
+      "title": "缓存恢复缓慢",
+      "body": "缓存恢复耗时较长，安装和类型检查均通过。状态：investigating。"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+
+> test
+> node --test tests/loop.test.ts tests/tool-validation.test.ts
+
+✔ follow-up：追加的新消息实际进入下一次模型请求 (2.082625ms)
+✔ follow-up：持续追加消息不能重置总步数预算 (0.184833ms)
+✔ 完整工具流程：第二次模型请求携带调用和对应结果 (0.467ms)
+✔ 未知工具：错误回传模型，模型仍可给出最终回答 (0.244167ms)
+✔ 模型持续调用工具：处理完第三步后停止，不发起第四次请求 (0.760917ms)
+✔ 上限为零时不请求模型；最后允许的一步可正常结束 (0.301ms)
+✔ call 为 null 也结束；有文字且有 call 时仍执行工具 (0.15625ms)
+✔ 正常加法 (1.790167ms)
+✔ 零与负数是有效参数 (0.236208ms)
+✔ 拒绝字符串而非隐式转换 (0.144333ms)
+✔ 拒绝缺失字段 (0.102375ms)
+✔ 拒绝 null 参数 (0.144292ms)
+✔ 拒绝缺失整个参数 (0.86175ms)
+✔ 拒绝数组参数 (0.086ms)
+✖ 拒绝 NaN (0.735208ms)
+✖ 拒绝正无穷 (0.172833ms)
+✖ 拒绝负无穷 (0.193208ms)
+✔ 未知工具返回错误 (0.156625ms)
+✔ 参数读取抛异常后仍回传错误 (0.106042ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 16
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 135.930084
+
+✖ failing tests:
+
+test at tests/tool-validation.test.ts:81:3
+✖ 拒绝 NaN (0.735208ms)
+  AssertionError [ERR_ASSERTION]: 非法参数或执行异常必须标记为错误
+  + actual - expected
+  
+  + undefined
+  - true
+  
+      at TestContext.<anonymous> (file:///Users/chen/Desktop/agent%E9%9D%A2%E7%BB%8F/practice/01-agent-loop/tests/tool-validation.test.ts:84:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/tool-validation.test.ts:81:3
+✖ 拒绝正无穷 (0.172833ms)
+  AssertionError [ERR_ASSERTION]: 非法参数或执行异常必须标记为错误
+  + actual - expected
+  
+  + undefined
+  - true
+  
+      at TestContext.<anonymous> (file:///Users/chen/Desktop/agent%E9%9D%A2%E7%BB%8F/practice/01-agent-loop/tests/tool-validation.test.ts:84:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/tool-validation.test.ts:81:3
+✖ 拒绝负无穷 (0.193208ms)
+  AssertionError [ERR_ASSERTION]: 非法参数或执行异常必须标记为错误
+  + actual - expected
+  
+  + undefined
+  - true
+  
+      at TestContext.<anonymous> (file:///Users/chen/Desktop/agent%E9%9D%A2%E7%BB%8F/practice/01-agent-loop/tests/tool-validation.test.ts:84:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

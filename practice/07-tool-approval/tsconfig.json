@@ -1,0 +1,10 @@
+{
+  "extends": "../../repos/pi-mono/tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "typeRoots": ["../../repos/pi-mono/node_modules/@types"]
+  },
+  "include": ["./*.ts"],
+  "exclude": []
+}

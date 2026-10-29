@@ -1,0 +1,142 @@
+
+ RUN  v4.1.12 /Users/chen/Desktop/agent面经/practice/08-session-rules
+
+····xxx··x·x··
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+AssertionError: expected 2 to be greater than 2
+ ❯ command rules.test.ts:77:30
+     75|     await h.session.prompt(text);
+     76|     expect(fixture.requests).toHaveLength(requestsBefore);
+     77|     expect(h.notices.length).toBeGreaterThan(noticesBefore);
+       |                              ^
+     78|     return h.notices.slice(noticesBefore).join("\n");
+     79|   }
+ ❯ rules.test.ts:123:22
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/9]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+AssertionError: expected [ { …(3) } ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   {
++     "error": "Cannot read properties of undefined (reading 'length')",
++     "event": "command",
++     "extensionPath": "command:rules",
++   },
++ ]
+
+ ❯ rules.test.ts:37:36
+     35|         session.dispose();
+     36|       }
+     37|       expect.soft(extensionErrors).toEqual([]);
+       |                                    ^
+     38|       expect(readFileSync(join(fixture.cwd, "AGENTS.md"), "utf8")).toB…
+     39|     } finally {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/9]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+AssertionError: expected 'language:  保存成功' to match /用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inval…/i
+
+- Expected:
+/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|invalid|required/i
+
++ Received:
+"language:  保存成功"
+
+ ❯ rules.test.ts:124:27
+    122|       const before = await command(h, "/rules list");
+    123|       const notice = await command(h, input);
+    124|       expect.soft(notice).toMatch(/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inva…
+       |                           ^
+    125|       expect(await command(h, "/rules list")).toBe(before);
+    126|       expect(rulesBlock(await prompt(h))).toBe("language:保留原值");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/9]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+AssertionError: expected 'language: ' to be 'language: 保留原值' // Object.is equality
+
+Expected: "language: 保留原值"
+Received: "language: "
+
+ ❯ rules.test.ts:125:47
+    123|       const notice = await command(h, input);
+    124|       expect.soft(notice).toMatch(/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inva…
+    125|       expect(await command(h, "/rules list")).toBe(before);
+       |                                               ^
+    126|       expect(rulesBlock(await prompt(h))).toBe("language:保留原值");
+    127|     },
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/9]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 合法 key 与子命令同名时，仍正确截取 value
+AssertionError: expected 'set:set 唯一约定值' to be 'set:唯一约定值' // Object.is equality
+
+Expected: "set:唯一约定值"
+Received: "set:set 唯一约定值"
+
+ ❯ rules.test.ts:139:41
+    137|     const h = await open();
+    138|     await command(h, "/rules set set 唯一约定值");
+    139|     expect(rulesBlock(await prompt(h))).toBe("set:唯一约定值");
+       |                                         ^
+    140|   });
+    141|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/9]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 初始空状态和删除最后一条后均不添加约定区块
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ rules.test.ts:162:64
+    160|   it("初始空状态和删除最后一条后均不添加约定区块", async () => {
+    161|     const h = await open();
+    162|     expect.soft((await prompt(h)).includes("<session_rules>")).toBe(fa…
+       |                                                                ^
+    163|     await command(h, "/rules set language 中文");
+    164|     await command(h, "/rules remove language");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/9]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 初始空状态和删除最后一条后均不添加约定区块
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ rules.test.ts:165:59
+    163|     await command(h, "/rules set language 中文");
+    164|     await command(h, "/rules remove language");
+    165|     expect((await prompt(h)).includes("<session_rules>")).toBe(false);
+       |                                                           ^
+    166|   });
+    167|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/9]⎯
+
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  5 failed | 9 passed (14)
+   Start at  19:34:54
+   Duration  4.88s (transform 6.11s, setup 0ms, import 8.54s, tests 513ms, environment 0ms)
+

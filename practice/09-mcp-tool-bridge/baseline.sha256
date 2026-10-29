@@ -1,0 +1,14 @@
+51aec87575fa37b8bc49bec79d847e0ad0dd9359d74862e4859c960b3f11def8  practice/09-mcp-tool-bridge/bridge.test.ts
+7c8461566a127339ac3ea44f47dfa5a9c04500c9993eb5b7c629f77de5c84eba  practice/09-mcp-tool-bridge/catalog-server.mjs
+3f6db6834e9ca2038ca6ff6f496fba1e48a39f9a1de65680e1bde3c917371253  practice/09-mcp-tool-bridge/catalog.json
+9b845b86af14da4dbfdadf8eda7652c0e04da6ee93d1de87aa2a676bbabceb60  practice/09-mcp-tool-bridge/fixtures.test.ts
+fd473075bd4c9344aa800a125941a000518af5895bdfa1980f947c5d54129fef  practice/09-mcp-tool-bridge/fixtures.ts
+275e55e58d2a8413a8796c0c54b5c97af0721c2bf5388171784a5112c9852f24  practice/09-mcp-tool-bridge/mcp-agent.ts
+ff368c1f3015872e7303f55828e8ba92be4de4f5790334496a186c98a301e620  practice/09-mcp-tool-bridge/tsconfig.json
+4f2dffac2c96235bc859f5bc00dee146144b2e3dec8aa40d7177c28de0fe0d9f  repos/pi-mono/packages/mcp/src/client.ts
+1f69dae42bae51698bee843d6340225072b6f29c006ca422a60f19a798d7bde6  repos/pi-mono/packages/mcp/src/transports/stdio.ts
+d4d06f1c3a788a262a073297a8cf503dc673523d2e6f34f29a590d4074794540  repos/pi-mono/packages/mcp/src/protocol/content.ts
+3b1ef52f6040f578415812cb58570cf6b022512ceaede808bfe28a672989d3f4  repos/pi-mono/packages/agent/src/agent.ts
+e23af5698bd2a5d39109285c9df75d7442bf99af053bd930c790af5adefabda6  repos/pi-mono/packages/agent/src/agent-loop.ts
+2e116ef60fdaca4e26be5a1ace8d8b47f545d648d365de60b8c9f9d1ba629ee4  repos/pi-mono/packages/agent/src/types.ts
+aeaa8df95399776587ad0cfccccd3b498891a20c5c5846f935e04d9d09dd84a1  repos/pi-mono/packages/ai/src/providers/faux.ts

@@ -1,0 +1,10 @@
+
+ RUN  v4.1.12 /Users/chen/Desktop/agent面经/practice/08-session-rules
+
+··············
+
+ Test Files  2 passed (2)
+      Tests  14 passed (14)
+   Start at  21:03:39
+   Duration  3.64s (transform 3.70s, setup 0ms, import 5.96s, tests 556ms, environment 0ms)
+

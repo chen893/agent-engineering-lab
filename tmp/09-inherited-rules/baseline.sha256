@@ -1,0 +1,11 @@
+7bab2ba9bb10bf0b1fcb97df6a45bf427d75b723baf19e5c57ecb7da2e1996da  practice/09-inherited-rules/compatibility.test.ts
+04d8ccfc2f1e49b3c13e141d9004db62d2e9ebb8363c867a42cb3a18fe8ca67c  practice/09-inherited-rules/fixtures.test.ts
+e6bfff9368f328fb058a426ad97834eca84c0fa19ef70606b006f6ba8c21d1b1  practice/09-inherited-rules/fixtures.ts
+350659fd8650e7950d2367088048fc91885b46003bd580102b3f2a301509681c  practice/09-inherited-rules/inheritance.test.ts
+2911608fad154aa073e07eef3e05393786f4f28f69fb9b39908fd7b0c7f54a7f  practice/09-inherited-rules/rules-extension.ts
+ff368c1f3015872e7303f55828e8ba92be4de4f5790334496a186c98a301e620  practice/09-inherited-rules/tsconfig.json
+3b1ef52f6040f578415812cb58570cf6b022512ceaede808bfe28a672989d3f4  repos/pi-mono/packages/agent/src/agent.ts
+e23af5698bd2a5d39109285c9df75d7442bf99af053bd930c790af5adefabda6  repos/pi-mono/packages/agent/src/agent-loop.ts
+450d82c529933214e088b8422f00061815e617f352f6c834689787a314064bff  repos/pi-mono/packages/coding-agent/src/core/session-manager.ts
+3cd6d1ad18e8e4c7adf722aed9291bc64f06e3a7d461755c21e3cba4819f4e5e  repos/pi-mono/packages/coding-agent/src/core/extensions/runner.ts
+5e28c82634113d0cca7ff5da6fa94e27aaae80e461cd5664ced9dbcef6f89089  repos/pi-mono/packages/coding-agent/src/core/system-prompt.ts

@@ -1,0 +1,10 @@
+
+ RUN  v4.1.12 /Users/chen/Desktop/agent面经/practice/09-inherited-rules
+
+-··············
+
+ Test Files  2 passed | 1 skipped (3)
+      Tests  14 passed | 1 todo (15)
+   Start at  21:31:27
+   Duration  4.67s (transform 4.66s, setup 0ms, import 7.68s, tests 564ms, environment 1ms)
+

@@ -1,0 +1,172 @@
+
+ RUN  v4.1.12 /Users/chen/Desktop/agent面经/practice/08-session-rules
+
+···xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+set language 保留原值
+ set language 保留原值
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+set
+ set  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+set language 保留原值
+ set language 保留原值
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+set language
+ set language 
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+set language 保留原值
+ set language 保留原值
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+set language   
+ set language 
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+·······
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+AssertionError: expected ':  保存成功' to match /用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inval…/i
+
+- Expected:
+/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|invalid|required/i
+
++ Received:
+":  保存成功"
+
+ ❯ rules.test.ts:124:27
+    122|       const before = await command(h, "/rules list");
+    123|       const notice = await command(h, input);
+    124|       expect.soft(notice).toMatch(/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inva…
+       |                           ^
+    125|       expect(await command(h, "/rules list")).toBe(before);
+    126|       expect(rulesBlock(await prompt(h))).toBe("language:保留原值");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/6]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+AssertionError: expected ': \nlanguage: 保留原值' to be 'language: 保留原值' // Object.is equality
+
+- Expected
++ Received
+
++ : 
+  language: 保留原值
+
+ ❯ rules.test.ts:125:47
+    123|       const notice = await command(h, input);
+    124|       expect.soft(notice).toMatch(/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inva…
+    125|       expect(await command(h, "/rules list")).toBe(before);
+       |                                               ^
+    126|       expect(rulesBlock(await prompt(h))).toBe("language:保留原值");
+    127|     },
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/6]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+AssertionError: expected 'language:  保存成功' to match /用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inval…/i
+
+- Expected:
+/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|invalid|required/i
+
++ Received:
+"language:  保存成功"
+
+ ❯ rules.test.ts:124:27
+    122|       const before = await command(h, "/rules list");
+    123|       const notice = await command(h, input);
+    124|       expect.soft(notice).toMatch(/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inva…
+       |                           ^
+    125|       expect(await command(h, "/rules list")).toBe(before);
+    126|       expect(rulesBlock(await prompt(h))).toBe("language:保留原值");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/6]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+AssertionError: expected 'language: ' to be 'language: 保留原值' // Object.is equality
+
+Expected: "language: 保留原值"
+Received: "language: "
+
+ ❯ rules.test.ts:125:47
+    123|       const notice = await command(h, input);
+    124|       expect.soft(notice).toMatch(/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inva…
+    125|       expect(await command(h, "/rules list")).toBe(before);
+       |                                               ^
+    126|       expect(rulesBlock(await prompt(h))).toBe("language:保留原值");
+    127|     },
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/6]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  3 failed | 10 passed (13)
+   Start at  20:58:30
+   Duration  3.30s (transform 1.73s, setup 0ms, import 2.65s, tests 525ms, environment 0ms)
+

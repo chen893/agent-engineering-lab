@@ -1,0 +1,213 @@
+[
+  {
+    "scenario": "normal",
+    "requests": [
+      [
+        {
+          "role": "user",
+          "content": "计算 2 + 3"
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "计算 2 + 3"
+        },
+        {
+          "role": "assistant",
+          "content": "准备调用工具",
+          "call": {
+            "id": "call-1",
+            "name": "add",
+            "arguments": {
+              "a": 2,
+              "b": 3
+            }
+          }
+        },
+        {
+          "role": "tool",
+          "output": {
+            "toolCallId": "call-1",
+            "result": 5
+          }
+        }
+      ]
+    ],
+    "result": {
+      "status": "completed",
+      "messages": [
+        {
+          "role": "user",
+          "content": "计算 2 + 3"
+        },
+        {
+          "role": "assistant",
+          "content": "准备调用工具",
+          "call": {
+            "id": "call-1",
+            "name": "add",
+            "arguments": {
+              "a": 2,
+              "b": 3
+            }
+          }
+        },
+        {
+          "role": "tool",
+          "output": {
+            "toolCallId": "call-1",
+            "result": 5
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "计算结果：5"
+        }
+      ],
+      "steps": 2
+    }
+  },
+  {
+    "scenario": "unknown",
+    "requests": [
+      [
+        {
+          "role": "user",
+          "content": "计算 2 + 3"
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "计算 2 + 3"
+        },
+        {
+          "role": "assistant",
+          "content": "准备调用工具",
+          "call": {
+            "id": "call-1",
+            "name": "missing",
+            "arguments": {
+              "a": 2,
+              "b": 3
+            }
+          }
+        },
+        {
+          "role": "tool",
+          "output": {
+            "isError": true,
+            "errorMessage": "tool missing 不存在，请调用其它工具",
+            "toolCallId": "call-1"
+          }
+        }
+      ]
+    ],
+    "result": {
+      "status": "completed",
+      "messages": [
+        {
+          "role": "user",
+          "content": "计算 2 + 3"
+        },
+        {
+          "role": "assistant",
+          "content": "准备调用工具",
+          "call": {
+            "id": "call-1",
+            "name": "missing",
+            "arguments": {
+              "a": 2,
+              "b": 3
+            }
+          }
+        },
+        {
+          "role": "tool",
+          "output": {
+            "isError": true,
+            "errorMessage": "tool missing 不存在，请调用其它工具",
+            "toolCallId": "call-1"
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "工具失败：tool missing 不存在，请调用其它工具"
+        }
+      ],
+      "steps": 2
+    }
+  },
+  {
+    "scenario": "invalid-argument",
+    "requests": [
+      [
+        {
+          "role": "user",
+          "content": "计算 2 + 3"
+        }
+      ],
+      [
+        {
+          "role": "user",
+          "content": "计算 2 + 3"
+        },
+        {
+          "role": "assistant",
+          "content": "准备调用工具",
+          "call": {
+            "id": "call-1",
+            "name": "add",
+            "arguments": {
+              "a": "2",
+              "b": 3
+            }
+          }
+        },
+        {
+          "role": "tool",
+          "output": {
+            "isError": true,
+            "errorMessage": "参数 a 或 b 不是有效数字",
+            "toolCallId": "call-1"
+          }
+        }
+      ]
+    ],
+    "result": {
+      "status": "completed",
+      "messages": [
+        {
+          "role": "user",
+          "content": "计算 2 + 3"
+        },
+        {
+          "role": "assistant",
+          "content": "准备调用工具",
+          "call": {
+            "id": "call-1",
+            "name": "add",
+            "arguments": {
+              "a": "2",
+              "b": 3
+            }
+          }
+        },
+        {
+          "role": "tool",
+          "output": {
+            "isError": true,
+            "errorMessage": "参数 a 或 b 不是有效数字",
+            "toolCallId": "call-1"
+          }
+        },
+        {
+          "role": "assistant",
+          "content": "工具失败：参数 a 或 b 不是有效数字"
+        }
+      ],
+      "steps": 2
+    }
+  }
+]

@@ -1,0 +1,10 @@
+
+ RUN  v4.1.12 /Users/chen/Desktop/agent面经/practice/09-mcp-tool-bridge
+
+-····
+
+ Test Files  1 passed | 1 skipped (2)
+      Tests  4 passed | 1 todo (5)
+   Start at  21:46:26
+   Duration  3.01s (transform 1.73s, setup 0ms, import 2.64s, tests 262ms, environment 0ms)
+

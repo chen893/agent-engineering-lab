@@ -1,0 +1,6 @@
+AI 运行验证：去除 TypeScript 类型后执行原函数；未进行静态类型检查。
+{"case":"add","output":{"toolCallId":"call-1","result":5},"passed":true}
+{"case":"add","output":{"toolCallId":"call-2","result":5},"passed":true}
+{"case":"unknown tool","output":{"isError":true,"errorMessage":"tool missing 不存在，请调用其它工具","toolCallId":"missing-1"},"passed":true}
+{"case":"unknown tool","output":{"isError":true,"errorMessage":"tool missing 不存在，请调用其它工具","toolCallId":"missing-2"},"passed":true}
+{"case":"运行时参数类型探查，尚非本步验收项","output":{"toolCallId":"invalid-1","result":"23"}}

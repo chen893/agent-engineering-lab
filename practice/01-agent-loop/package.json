@@ -1,0 +1,12 @@
+{
+  "name": "agent-loop-practice",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.ts",
+    "test": "node --test tests/loop.test.ts tests/tool-validation.test.ts",
+    "test:validation": "node --test tests/tool-validation.test.ts",
+    "check:scaffold": "node --test tests/scaffold.test.ts"
+  },
+  "engines": { "node": ">=22.18.0" }
+}

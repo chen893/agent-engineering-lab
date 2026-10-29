@@ -1,0 +1,317 @@
+
+ RUN  v4.1.12 /Users/chen/Desktop/agent面经/practice/rules-diag-pi_f07vm
+
+xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 增改查删、删除不存在的键：通知正确，所有命令不调用模型
+list
+ list  
+
+
+
+
+xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules：通知错误/用法且状态不变
+set language 保留原值
+ set language 保留原值
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules：通知错误/用法且状态不变
+
+   
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules unknown：通知错误/用法且状态不变
+set language 保留原值
+ set language 保留原值
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules unknown：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules unknown：通知错误/用法且状态不变
+unknown
+ unknown  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules unknown：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+set language 保留原值
+ set language 保留原值
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+set
+ set  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+set language 保留原值
+ set language 保留原值
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+set language
+ set language 
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+set language 保留原值
+ set language 保留原值
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+set language   
+ set language 
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules remove：通知错误/用法且状态不变
+set language 保留原值
+ set language 保留原值
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules remove：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules remove：通知错误/用法且状态不变
+remove
+ remove  
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules remove：通知错误/用法且状态不变
+list
+ list  
+
+
+
+
+·····xstdout | rules.test.ts > 会话约定：README 契约集成验收 > 真正落盘后用新 manager/扩展实例恢复；另一个会话隔离，再次打开原会话仍保留
+set package-manager OLD_DISK_08
+ set package-manager OLD_DISK_08
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 真正落盘后用新 manager/扩展实例恢复；另一个会话隔离，再次打开原会话仍保留
+set package-manager PNPM_DISK_08
+ set package-manager PNPM_DISK_08
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 真正落盘后用新 manager/扩展实例恢复；另一个会话隔离，再次打开原会话仍保留
+set language DELETED_DISK_08
+ set language DELETED_DISK_08
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 真正落盘后用新 manager/扩展实例恢复；另一个会话隔离，再次打开原会话仍保留
+remove language
+ remove language 
+
+
+
+
+stdout | rules.test.ts > 会话约定：README 契约集成验收 > 真正落盘后用新 manager/扩展实例恢复；另一个会话隔离，再次打开原会话仍保留
+list
+ list  
+
+
+
+
+
+
+ Test Files  1 failed (1)
+      Tests  8 failed | 5 passed (13)
+   Start at  20:58:59
+   Duration  3.18s (transform 1.75s, setup 0ms, import 2.54s, tests 528ms, environment 0ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 8 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 增改查删、删除不存在的键：通知正确，所有命令不调用模型
+AssertionError: expected 'key 必须以小写字母开头，只能包含小写字母、数字和连字符，总长度 1-32' to match /空/
+
+- Expected:
+/空/
+
++ Received:
+"key 必须以小写字母开头，只能包含小写字母、数字和连字符，总长度 1-32"
+
+ ❯ rules.test.ts:102:45
+    100|   it("增改查删、删除不存在的键：通知正确，所有命令不调用模型", async () => {
+    101|     const h = await open();
+    102|     expect(await command(h, "/rules list")).toMatch(/空/);
+       |                                             ^
+    103|     await command(h, "/rules set package-manager 使用 npm");
+    104|     await command(h, "/rules set language 回复中文");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/10]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules：通知错误/用法且状态不变
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules unknown：通知错误/用法且状态不变
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set：通知错误/用法且状态不变
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules remove：通知错误/用法且状态不变
+AssertionError: expected 'key 必须以小写字母开头，只能包含小写字母、数字和连字符，总长度 1-32' to match /用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inval…/i
+
+- Expected:
+/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|invalid|required/i
+
++ Received:
+"key 必须以小写字母开头，只能包含小写字母、数字和连字符，总长度 1-32"
+
+ ❯ rules.test.ts:124:27
+    122|       const before = await command(h, "/rules list");
+    123|       const notice = await command(h, input);
+    124|       expect.soft(notice).toMatch(/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inva…
+       |                           ^
+    125|       expect(await command(h, "/rules list")).toBe(before);
+    126|       expect(rulesBlock(await prompt(h))).toBe("language:保留原值");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/10]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+AssertionError: expected 'language:  保存成功' to match /用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inval…/i
+
+- Expected:
+/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|invalid|required/i
+
++ Received:
+"language:  保存成功"
+
+ ❯ rules.test.ts:124:27
+    122|       const before = await command(h, "/rules list");
+    123|       const notice = await command(h, input);
+    124|       expect.soft(notice).toMatch(/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inva…
+       |                           ^
+    125|       expect(await command(h, "/rules list")).toBe(before);
+    126|       expect(rulesBlock(await prompt(h))).toBe("language:保留原值");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/10]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language：通知错误/用法且状态不变
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 非法输入 /rules set language   ：通知错误/用法且状态不变
+AssertionError: expected 'language:' to be 'language:保留原值' // Object.is equality
+
+Expected: "language:保留原值"
+Received: "language:"
+
+ ❯ rules.test.ts:126:43
+    124|       expect.soft(notice).toMatch(/用法|错误|参数|缺少|不存在|未找到|不能为空|usage|inva…
+    125|       expect(await command(h, "/rules list")).toBe(before);
+    126|       expect(rulesBlock(await prompt(h))).toBe("language:保留原值");
+       |                                           ^
+    127|     },
+    128|   );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/10]⎯
+
+ FAIL  rules.test.ts > 会话约定：README 契约集成验收 > 真正落盘后用新 manager/扩展实例恢复；另一个会话隔离，再次打开原会话仍保留
+AssertionError: expected 'key 必须以小写字母开头，只能包含小写字母、数字和连字符，总长度 1-32' to contain 'package-manager: PNPM_DISK_08'
+
+Expected: "package-manager: PNPM_DISK_08"
+Received: "key 必须以小写字母开头，只能包含小写字母、数字和连字符，总长度 1-32"
+
+ ❯ rules.test.ts:193:21
+    191|     expect(restored.loader.getExtensions().extensions[0]).not.toBe(ori…
+    192|     const listing = await command(restored, "/rules list");
+    193|     expect(listing).toContain("package-manager: PNPM_DISK_08");
+       |                     ^
+    194|     expect(listing).not.toContain("language");
+    195|     expect(rulesBlock(await prompt(restored))).toBe("package-manager:P…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/10]⎯
+

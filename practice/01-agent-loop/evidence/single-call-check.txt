@@ -1,0 +1,4 @@
+验证方式：Node.js 去除 TypeScript 类型后执行原函数；未执行 TypeScript 类型检查。
+{"input":{"id":"call-1","name":"add","arguments":{"a":2,"b":3}},"output":{"toolCallId":"call-1","result":5},"passed":true}
+{"input":{"id":"call-2","name":"add","arguments":{"a":2,"b":3}},"output":{"toolCallId":"call-2","result":5},"passed":true}
+补充观察：未知工具返回 undefined；此项不属于当前小目标的通过条件。

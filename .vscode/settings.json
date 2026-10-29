@@ -1,0 +1,12 @@
+{
+  // 根目录 .gitignore 用 /repos/ 排除 pi-mono，VS Code 搜索默认读 .gitignore，
+  // 导致 repos/pi-mono 整棵树搜不到。关掉 ignore files 即可搜到，
+  // 下面 search.exclude 用来挡掉 node_modules/dist 等大目录，避免搜索变慢。
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.git": true,
+    "**/*.map": true
+  }
+}

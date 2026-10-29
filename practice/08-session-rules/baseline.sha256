@@ -1,0 +1,14 @@
+d7483cdf309436e201a7772c0980dc31bb6e02b771b02e75e2b6e47ed6de8122  practice/08-session-rules/fixtures.test.ts
+df14a798c265a55098614b160ae18e8ccf942ef155676f6bd0d26f26215f8ac5  practice/08-session-rules/fixtures.ts
+eff18fa6db831942ed2b029c0accff1a77b08f5b4beb54d47144928655ad666c  practice/08-session-rules/rules-extension.ts
+aaf833bf6366662ee78b75025f599d2e66b8e69ae1d367bc325803944cf0a7d7  practice/08-session-rules/rules.test.ts
+ff368c1f3015872e7303f55828e8ba92be4de4f5790334496a186c98a301e620  practice/08-session-rules/tsconfig.json
+ccc798224d070e7a18c918f74be48c15eacc67f76aaa66b9809c015327b555d4  repos/pi-mono/packages/coding-agent/src/core/resource-loader.ts
+e0fa206e8c49a98c024708068df39c0e4944f4251633425fc083b2fbb5ec0ac6  repos/pi-mono/packages/coding-agent/src/core/agent-session.ts
+450d82c529933214e088b8422f00061815e617f352f6c834689787a314064bff  repos/pi-mono/packages/coding-agent/src/core/session-manager.ts
+0177db97c7e35ea39cdab53124c04dbf6e045ac379670bcae0b4e1269002eb3a  repos/pi-mono/packages/coding-agent/src/core/extensions/loader.ts
+3cd6d1ad18e8e4c7adf722aed9291bc64f06e3a7d461755c21e3cba4819f4e5e  repos/pi-mono/packages/coding-agent/src/core/extensions/runner.ts
+cb54c7a4fedb3473bb995694bbc1f2988c144fb0b802bfd1b656816bc25d0f25  repos/pi-mono/packages/coding-agent/src/core/extensions/types.ts
+5536d6f0a4fdad9d3116ccb25cd7c889125541417a1625a9ba150772c0f499be  repos/pi-mono/packages/agent/src/agent.ts
+5443e59603680884500b637d2621578c0cad0efcd22ab7d728048b090cbe7be4  repos/pi-mono/packages/agent/src/agent-loop.ts
+6878351c8ba771c15623d1b0ba05e43c22a641f76b475d78c0a7722d9ea1db2c  repos/pi-mono/packages/ai/src/providers/data/.manifest.json

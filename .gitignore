@@ -1,0 +1,13 @@
+# 外部源码保留自己的 Git 历史；学习笔记仓库不重复收录。
+/repos/
+node_modules/
+.DS_Store
+.env
+.env.*
+!.env.example
+
+
+# 本地工具缓存与部署归档
+**/.git/
+**/.vite/
+*.tar.gz
