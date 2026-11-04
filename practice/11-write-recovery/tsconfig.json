@@ -1,0 +1,5 @@
+{
+  "extends": "../09-mcp-tool-bridge/tsconfig.json",
+  "include": ["./*.ts", "../../repos/pi-mono/packages/coding-agent/src/utils/highlight-js.d.ts"],
+  "exclude": []
+}
